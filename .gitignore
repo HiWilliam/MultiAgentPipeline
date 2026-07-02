@@ -1,0 +1,86 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# 测试 / 覆盖率
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# ===== 类型检查 / linter =====
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# ===== Pipeline 运行产物 =====
+# 单次 trial 的产物目录，包含 artifacts / impl / state 等
+runs/
+# pipeline 主 artifacts 输出目录
+pipeline/artifacts/
+# pipeline 运行时 state 文件（含可能的手动覆盖 state）
+pipeline/state.json
+pipeline/state.*.md
+
+# ===== 本地配置 =====
+# 只忽略本地真实配置，保留 *.example.yaml 作为模板
+config.yaml
+config.local.yaml
+*.local.yaml
+
+# ===== IDE / 编辑器 =====
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ===== Claude / Codex 本地会话 =====
+.claude/
+.codex/
+.agents/
+
+# ===== 日志 / 临时文件 =====
+*.log
+logs/
+tmp/
+*.tmp
+*.bak
